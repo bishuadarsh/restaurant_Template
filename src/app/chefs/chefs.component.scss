@@ -1,0 +1,51 @@
+.the-chefs{
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+
+h2 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+#chef {
+    
+    img{
+        border-radius: 50%;
+        width: 200px;
+    }
+   .chef- {
+        &name {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+    
+    &subname{
+        color: #b3b3b3;
+        letter-spacing: .1em;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    &description{
+        color: #808080;
+
+    }
+    &social{
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            color: indianred;
+          }
+    }
+        
+    }
+    
+}

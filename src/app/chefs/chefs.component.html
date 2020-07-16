@@ -1,0 +1,28 @@
+<div class="container the-chefs">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">
+                Meet The Chef's
+            </h2>
+        </div>
+    
+        <div class="col-md-6 col-12" id="chef" *ngFor="let chef of chefsList">
+            <div class="row text-center">
+                <div class="col-12 m-2">
+                    <img src="{{chef.picture}}" alt="{{chef.name}}">
+                </div>
+                <div class="col-12 chef-name m-2">{{chef.name}}</div>
+                <div class="col-12 chef-subname m-2">{{chef.role}}</div>
+                <div class="col-12 chef-description">{{chef.description}}</div>
+                <div class="col-12 chef-social ">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                     <span class="mt-5 pb-5 ml-2 mr-2 d-inline"><a href="#" class="fa fa-facebook"></a></span>
+                     <span class="mt-5 pb-5 ml-2 mr-2 d-inline"><a href="#" class="fa fa-twitter"></a></span>
+                     <span class="mt-5 pb-5 ml-2 mr-2 d-inline"><a href="#" class="fa fa-instagram"></a></span>   
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,113 @@
+<div class="container-fluid mb-5 pb-5" id="featureFood">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="featureFood-title text-center p5">
+          Find your best food
+        <div class="d-block featureFood-title-subtitle mt-4">
+          Template For Restaurant Made By BizzTalk
+        </div>
+      </h2>
+      </div>
+  
+      <div class="col-12">
+        <div class="row">
+          <div class="col-8 col">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <!--- ngFor for the first 2 elements-->
+  
+                  <ng-template ngFor let-item [ngForOf]="featured" let-i="index" >
+                    <div *ngIf="i < 2" class="col-md-12 col featureFood-item">
+                        
+                      <div class="row" *ngIf="i % 2 != 0">
+                        <div class="col-md-6 text-center bg-white">
+                          <div class="flex-column d-flex align-content-center justify-content-center h-100 ">
+                            <h3>
+                              {{item.name}}
+                            </h3>
+                            <h4 class="text-uppercase">
+                              {{item.subTitle}}
+                            </h4>
+                            <div class="featureFood-item-description">
+                              {{item.description}}
+                            </div>
+                            <a class="text-uppercase">Learn more -> </a>
+                            
+                          </div>
+  
+                        </div>
+                        
+                        <div _ngcontent-lue-c3="" class="col-md-6 featuredFood-item-img-wrapper" style="background-image : url(https://colorlib.com/preview/theme/meal/images/img_1.jpg);">
+                          
+                        </div>
+                    
+                      </div>  
+                        
+                        <div class="row" *ngIf="i % 2 == 0">
+                          <div _ngcontent-lue-c3="" class="col-md-6 featuredFood-item-img-wrapper" style="background-image : url(https://colorlib.com/preview/theme/meal/images/img_2.jpg);">
+                          </div>
+                          <div class="col-md-6 text-center">
+                            <div class="flex-column d-flex align-content-center justify-content-center h-100 bg-white">
+                              <h3>
+                                {{item.name}}
+                              </h3>
+                              <h4 class="text-uppercase">
+                                {{item.subTitle}}
+                              </h4>
+                              <div class="featureFood-item-description">
+                                {{item.description}}
+                              </div>
+                              <a class="text-uppercase">Learn more -> </a>
+                              
+                            </div>
+  
+                          </div>
+                        </div>
+                    </div>
+                  </ng-template>
+                    
+                  </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-4 col">
+  
+              <ng-template ngFor let-item [ngForOf]="featured" let-i="index" >
+                <div *ngIf="i > 1" class="featureFood-item">
+                  <div class="row">
+                  
+                    <div _ngcontent-lue-c3="" class="col-md-12 featuredFood-item-img-wrapper" style="background-image : url(https://colorlib.com/preview/theme/meal/images/img_3.jpg);">
+                    </div>
+                   
+                    <div class="col-md-12 text-center bg-white">
+                      <div class="flex-column d-flex align-content-center justify-content-center h-400">
+                        <h3>
+                          {{item.name}}
+                        </h3>
+                        <h4 class="text-uppercase">
+                          {{item.subTitle}}
+                        </h4>
+                        <div class="featureFood-item-description">
+                          {{item.description}}
+                        </div>
+                        <a class="text-uppercase">Learn more -> </a>
+                        
+                      </div>
+                    </div>
+                 </div>
+                </div>
+              </ng-template>
+            </div>
+           
+  
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

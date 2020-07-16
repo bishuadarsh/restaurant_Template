@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -124,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "meal"
+    }
+  },
+  "defaultProject": "meal",
+  "cli": {
+    "analytics": "89ded0d7-ead8-4fc9-a664-1b92d38bed59"
+  }
 }
